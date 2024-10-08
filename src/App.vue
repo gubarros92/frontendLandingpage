@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+    <div id="app">
+      <HeroSection />
+      <ComoParticipar />
+      <CarrosselPremios />
+      <Faq />
+      <ListaGanhadores />
+      <Footer />
+    </div>
+  </template>
+  
+  <script>
+  import HeroSection from './components/HeroSection.vue';
+  import ComoParticipar from './components/ComoParticipar.vue';
+  import CarrosselPremios from './components/CarrosselPremios.vue';
+  import Faq from './components/Faq.vue';
+  import ListaGanhadores from './components/ListaGanhadores.vue';
+  import Footer from './components/Footer.vue';
+  
+  export default {
+    name: 'App',
+    components: {
+      HeroSection,
+      ComoParticipar,
+      CarrosselPremios,
+      Faq,
+      ListaGanhadores,
+      Footer
+    }
   }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  </script>
+  
+  <style>
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  </style>
+  
